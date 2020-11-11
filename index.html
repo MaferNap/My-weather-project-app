@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/6123964614.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Project She Codes Plus</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card frame">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <img
+                class="cityline"
+                src="images/skylinecity1.png"
+                alt="skyline"
+              />
+              <ul class="listCities">
+                <li>London</li>
+                <li>Tokyo</li>
+                <li>New York</li>
+                <li>Mexico City</li>
+                <li>Rio de Janeiro</li>
+              </ul>
+              <form>
+                <input
+                  class="changeCities"
+                  type="text"
+                  placeholder="Change cities..."
+                />
+              </form>
+              <img
+                class="world"
+                src="images/globetransparent.png"
+                alt="globe"
+              />
+            </div>
+            <div class="col-9">
+              <form class="weatherSearch" id="city-search">
+                <input
+                  class="cityBox"
+                  type="text"
+                  placeholder="Enter City..."
+                  autocomplete="off"
+                  id="city-quest"
+                />
+                <input
+                  class="searchbutton"
+                  type="submit"
+                  value="Search"
+                  id="city-search-button"
+                />
+                <button class="locationButton" id="current-location-button">
+                  Current Location 🔍
+                </button>
+              </form>
+
+              <div class="card temperature-frame">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col temperature-displayed">
+                      <span class="maintemperature" id="current-degrees"
+                        >20</span
+                      >
+                      <small>
+                        <a href="#" id="celsius-degrees">ºC</a> |
+                        <a href="#" id="farenheit-degrees"> </a
+                      ></small>
+                      <p>
+                        <span class="currentCity" id="current-city"
+                          ><strong>Brussels</strong>
+                        </span>
+                        <br />
+                        <span class="currentDate" id="current-date"
+                          >Sunday 30 19h06</span
+                        >
+                      </p>
+                    </div>
+                    <div class="col">
+                      <h4 id="current-weather">Cloudy</h4>
+                      <p>
+                        Humidity: <span id="humidity">60</span>%
+                        <br />
+                        Wind: <span id="wind"> 6 </span> m/s
+                      </p>
+                      <i class="fas fa-cloud"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row week">
+                <div class="col">
+                  <i class="fas fa-cloud-sun-rain"></i>
+                  <br />
+                  <strong> Mon </strong>
+                  <p>
+                    19/10
+                    <br />
+                    17º
+                    <br />
+                    <small> 15º </small>
+                  </p>
+                </div>
+                <div class="col">
+                  <i class="fas fa-sun"></i>
+                  <br />
+                  <strong>Tue </strong>
+                  <p>
+                    20/10
+                    <br />
+                    21º
+                    <br />
+                    <small> 16º </small>
+                  </p>
+                </div>
+                <div class="col">
+                  <i class="fas fa-cloud-sun"></i>
+                  <br />
+                  <strong>Wed</strong>
+                  <p>
+                    21/10
+                    <br />
+                    16º
+                    <br />
+                    <small> 12º </small>
+                  </p>
+                </div>
+                <div class="col">
+                  <i class="fas fa-cloud-showers-heavy"></i>
+                  <br />
+                  <strong>Thu</strong>
+                  <p>
+                    22/10
+                    <br />
+                    13º
+                    <br />
+                    <small> 9º </small>
+                  </p>
+                </div>
+                <div class="col">
+                  <i class="fas fa-cloud-sun-rain"></i>
+                  <br />
+                  <strong>Fri</strong>
+                  <p>
+                    23/10
+                    <br />
+                    10º
+                    <br />
+                    <small> 7º </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
