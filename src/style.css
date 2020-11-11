@@ -1,0 +1,159 @@
+.frame {
+  position: relative;
+  top: 35px;
+  border: solid;
+  border-color: #ffffff;
+  border-radius: 8px;
+  font-family: "Itim", cursive;
+  background-image: linear-gradient(
+    -225deg,
+    #7085b6 0%,
+    #87a7d9 50%,
+    #def3f8 100%
+  );
+}
+.listCities {
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+li {
+  display: block;
+  text-align: center;
+  width: 60%;
+  background: #7f849e;
+  border: solid;
+  border-color: #7f849e;
+  border-radius: 7px;
+  color: #ffffff;
+  padding: 3px 0 0;
+  margin: 10px auto;
+  transition: ease-in-out 200ms;
+}
+li:hover {
+  background: #ffffff;
+  cursor: pointer;
+  color: #7f849e;
+  border-color: #ffffff;
+  font-size: 17px;
+}
+.weatherSearch {
+  padding: 25px 0;
+}
+
+.weatherSearch .cityBox {
+  border: none;
+  border-radius: 4px;
+  width: 25%;
+  padding: 6px;
+}
+
+.weatherSearch .searchbutton {
+  border: solid;
+  border-width: 2px;
+  border-color: #036ec5;
+  border-radius: 6px;
+  width: 10%;
+  padding: 6px;
+  background-color: #036ec5;
+  color: #ffffff;
+  transition: ease-in-out 250ms;
+}
+
+.searchbutton:hover {
+  background: #ffffff;
+  color: #036ec5;
+}
+
+.weatherSearch .locationButton {
+  border: solid;
+  border-width: 2px;
+  border-color: #036ec5;
+  border-radius: 6px;
+  width: 25%;
+  padding: 6px;
+  background-color: #036ec5;
+  color: #ffffff;
+
+  transition: ease-in-out 250ms;
+}
+.locationButton:hover {
+  background: #ffffff;
+  color: #036ec5;
+  font-size: 17px;
+}
+.cityline {
+  display: block;
+  border: none;
+  border-color: #cce2f4;
+  width: 150px;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+  background-color: transparent;
+}
+.world {
+  display: block;
+  border: none;
+  border-color: #cce2f4;
+  margin: 0 auto;
+  width: 150px;
+  position: relative;
+  top: 52px;
+}
+.changeCities {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  border: solid;
+  border-width: 1px;
+  border-color: #036ec5;
+  border-radius: 4px;
+  position: relative;
+  top: 35px;
+}
+.temperature-frame {
+  border: solid;
+  border-color: #cce2f4;
+  border-radius: 3px;
+  margin: 15px 50px 15px 0;
+}
+.week {
+  color: #596aca;
+  font-size: 23px;
+}
+.temperature-frame small {
+  color: #44a6f5;
+  position: relative;
+  top: -50px;
+}
+.temperature-frame .maintemperature {
+  font-size: 95px;
+  color: #43a5f5;
+}
+.temperature-frame .temperature-displayed {
+  position: relative;
+  top: -20px;
+}
+.temperature-frame h4 {
+  font-size: 30px;
+  color: #43a5f5;
+}
+.temperature-frame i {
+  color: #036ec5;
+  font-size: 60px;
+}
+.temperature-frame p {
+  color: #036ec5;
+}
+
+.temperature-frame .currentCity {
+  font-size: 30px;
+}
+
+.week small {
+  color: #44a6f5;
+}
